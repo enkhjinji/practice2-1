@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        
+        }
+        .content-1{
+            width: 100px;
+            height: 200px;
+            background-color: brown;
+        }
+        .content-2{
+            width: 70px;
+            height: 150px;
+            background-color: coral;
+        }
+        .content-3{
+            width: 50px;
+            height: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" id="btn" onclick="changeClass()">Toggle class</button>
+
+    <div class="content-1" id="co" ></div>
+    <div class="content-2" id="nte" ></div>
+    <div class="content-3" id="nts" ></div>
+
+
+    <script>
+        changeClass = function () {
+            x = co.className
+            co.className = nte.className
+            nte.className = nts.className
+            nts.className = x   
+        }
+    </script>
+</body>
+</html>
